@@ -12,32 +12,44 @@
 <body>
     <!-- header-section-->
     <heade>
-        <div class="nav">
-            <a href="/" class="nav_logo">WebStudio</a>
-            <nav>
-                <ul class="list-nav">
-                    <li><a href="../index.html" class="link_buttons">Studio</a></li>
-                    <li><a class="link_buttons active-nav">Porfolio</a></li>
-                    <li><a href="#" class="link_buttons">Contacts</a></li>
+        <nav class="container__nav-container">
+            <div class="container__nav-organization">
+                <a href="#" class="container__nav-logo" >WebStudio</a>
+                <ul class="list__organization">
+                    <li >
+                        <a href="../index.html" class="list__organization-link " >Studio</a>
+                    </li>
+                    <li>
+                        <a href="#"  class="list__organization-link active-nav">Portafolio</a>
+                    </li>
+                    <li >
+                        <a href="#" class="list__organization-link">Contacts</a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="list-nav rigth ">
-                <a class="nav-icon">
-                    <svg class="icon-head-envelope" viewBox="0 0 30 14">
-                        <use href="../goit-markup-hw-02/images/icons.svg#icon-envelope"></use>
-                    </svg>
-                </a>
-                <li><a class="link_buttons" href="#" mailto:info@devstudio.com>info@devstudio.com</a></li>
+    
+                <ul class="list__organization">
+                    <li  class="list__icon-contacts-organization">
+                        <div class="list__icon-contacts-info">
+                            <svg class="icon-head-envelope" viewBox="0 0 30 14">
+                                <use href="../goit-markup-hw-02/images/icons.svg#icon-envelope"></use>
+                            </svg>
+                        </div>
+                        <a href="" class="list__organization-link contact-info">info@devstudio.com</a>
+                    </li>
+                    
 
-                <div class="nav-icon">
-                    <svg class="icon-head-envelope" viewBox="0 0 30 14">
-                        <use href="../goit-markup-hw-02/images/icons.svg#icon-mobile2"></use>
-                    </svg>
-                </div>
-                <li><a class="link_buttons" href="#" tel:+575555296000>+575555296000</a></li>
-            </ul>
-        </div>
-        </header>
+                    <li class="list__icon-contacts-organization">
+                        <div class="list__icon-contacts-info">
+                            <svg class="icon-head-envelope" viewBox="0 0 30 14">
+                                <use href="../goit-markup-hw-02/images/icons.svg#icon-mobile2"></use>
+                            </svg>
+                        </div>
+                        <a href="" class="list__organization-link contact-info">575555296000</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
         <!---Main Section-->
 
         <section>
@@ -226,71 +238,87 @@
 
         <!--Footer section-->
         <footer>
-            <div class="footer">
+            <!-------------------------CONTACTOS FOOTER----------------------->
+        <div >
+            <div class="container__footer-principal">
+                <div class="container__footer-addres-box">
     
-                <div class="container-footer">
-                    <div class="container-address container-general">
-                        <div>
-                            <a href="/" class="logo-footer">WebStudio</a>
-                            <address class="addres">
-                                <ul>
-                                    <li class="link_buttons">
-                                        <a href="" class="link_buttons direction">
-                                            Calz. Ticomán 500, Ciudad de <br>
-                                            Mexico, CDMX, Mexico
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank" class="contacts-link link_buttons
-                                                ">info@example.com</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank" class="contacts-link link_buttons
-                                                ">+52 55 5529 6000</a>
-                                    </li>
-                                </ul>
-                            </address>
-                        </div>
+                    <a href="" class="container__footer-logo">WebStudio</a>
+                    <address class="container__footer-list">
+                        <p class="container__footer-addres"> Shim. Ticomán 500, City of Mexico, CDMX, Mexico</p>
+                        <ul class="container__footer-list-organization">
+                            <li class="container__footer-list">
+                                <a href="" class="container__footer-contacts">
+                                    info@example.com
+                                </a>
+                            </li>
     
-                    </div>
+                            <li  class="container__footer-phone">
+                                <a href=""  class="container__footer-phone">
+                                    +52 55 5529 6000
+                                </a>
+                            </li>
+                            <li>
     
-                    <div class="contacts-footer">
-                        <p class="text-footer">Social Media</p>
-                        <div >
-                            <ul class="icons-footer">
-                                <li>
-                                    <a href="" class="focus-icon">
-                                        <svg class="icon-footer icon_section" viewBox="0 0 30 56">
-                                            <use href="../images/svg/sprite.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li> 
-                                <li>
-                                    <a href="" class="focus-icon">
-                                        <svg class="icon-footer icon_section" viewBox="0 0 30 56">
-                                            <use href="../images/svg/sprite.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="focus-icon">
-                                        <svg class="icon-footer icon_section" viewBox="0 0 30 56">
-                                            <use href="../images/svg/sprite.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="focus-icon">
-                                        <svg class="icon-footer" viewBox="0 0 30 56">
-                                            <use href="../images/svg/sprite.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                        </ul>
+                    </address>
                 </div>
-        </footer>
+    
+    
+            <!-------------------------ICON FOOTER----------------------->
+    
+                <div class="container__footer-section-icons">
+                <h5 class="container__footer-title">FIND US AT</h5>
+    
+    
+                        <ul class="container__footer-icon-organization">
+                            <li class="container__footer-form-icon">
+                                <a href="" class="container__footer-form-icon-hover">
+                                    <svg  class="icon__size" viewBox="0 0 30 56">
+                                        <use href="../images/svg/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+    
+                            <li class="container__footer-form-icon" >
+                                <a href="" class="container__footer-form-icon-hover"  >
+                                    <svg  class="icon__size"  viewBox="0 0 30 56">
+                                        <use href="../images/svg/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="container__footer-form-icon">
+                                <a href="" class="container__footer-form-icon-hover">
+                                    <svg  class="icon__size" viewBox="0 0 30 56">
+                                        <use href="../images/svg/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="container__footer-form-icon">
+                                <a href="" class="container__footer-form-icon-hover">
+                                    <svg  class="icon__size" viewBox="0 0 30 56">
+                                        <use href="../images/svg/sprite.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+            </div>
+    
+    
+    
+            <div>
+                
+            </div>
+    
+    
+    
+            </div>
+        </div>
+    
+        
+    </footer>
+    
     
 </body>
 </html>
